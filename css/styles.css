@@ -1,0 +1,96 @@
+:root {
+    --title-font: 'Lobster', cursive;
+    --bg-color: #1F1D36;
+    --bg-image: url("https://github.com/Soriyu1123/Images/blob/main/Computer.jpg?raw=true");
+    --text-color: #F7F7F7;
+}
+
+body {
+    background: var(--bg-image);
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+.container {
+    text-align: center;
+}
+    
+
+img {
+    width: 20%;
+}
+
+.p1 {
+    margin-right: 40%; margin-top: 5%;
+}
+
+.p2{
+    margin-bottom: 20px;
+}
+.img1 {
+    float: left; margin-right: 15px;
+    margin-left: 250px; margin-top: 35px;
+}
+
+.img2 {
+    float: right;
+    margin-left: 50px; margin-right: 20%; 
+}
+
+.butn {
+  margin-top: 25%;
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.butn:hover,
+.butn:active {
+  outline: 0;
+}
+
+.butn:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.butn:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.butn:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .butn {
+    padding: 16px 32px;
+  }
+}
+
+footer {
+    margin-left: 25%; margin-top: 10%;
+
+}
